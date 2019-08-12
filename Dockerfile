@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 MAINTAINER Docker Education Team <education@docker.com>
 
 RUN apt-get update
