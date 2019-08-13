@@ -7,7 +7,7 @@ RUN echo 'Hi, this is JZ web engine' \
     >/var/www/html/index.html
 
 COPY run_tests.sh /usr/local/bin/
-RUN chmod 777 run_tests.sh
+RUN chmod 777 /usr/local/bin/run_tests.sh
 CMD [ "nginx", "-g", "daemon off;" ]
 
 EXPOSE 80
