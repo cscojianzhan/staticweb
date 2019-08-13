@@ -1,6 +1,10 @@
 node {
     def app
-
+    agent {
+        docker {
+            args '-u root:sudo'
+        }
+    }
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
 
@@ -19,7 +23,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'sudo run_tests.sh'
+            sh 'run_tests.sh'
         }
     }
 
