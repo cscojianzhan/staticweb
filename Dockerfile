@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Docker Education Team <education@docker.com>
 
 RUN apt-get update
-RUN apt-get install -y nginx
+RUN apt-get install -y nginx curl
 RUN echo 'Hi, this is JZ web engine' \
     >/var/www/html/index.html
 
