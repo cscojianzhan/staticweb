@@ -3,7 +3,7 @@ MAINTAINER Docker Education Team <education@docker.com>
 
 RUN apt-get update
 RUN apt-get install -y nginx curl
-RUN echo 'Hi, this is JZ web engine' \
+RUN echo 'Hi, this is JZ web engine with autotest' \
     >/var/www/html/index.html
 
 COPY run_tests.sh /usr/local/bin/
