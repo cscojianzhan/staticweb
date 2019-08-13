@@ -1,10 +1,6 @@
-pipeline {
+node {
     def app
-    agent {
-        docker {
-            args '-u root:sudo'
-        }
-    }
+
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
 
