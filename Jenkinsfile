@@ -19,7 +19,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'run_tests.sh'
+            sh 'sudo run_tests.sh'
         }
     }
 
